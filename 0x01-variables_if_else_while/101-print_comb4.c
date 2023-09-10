@@ -1,46 +1,33 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * main - Entry point.
- *
- * Description: Print all possible different combination
- * of three digits.
- *
- * Return: 0; always success
+ * main - Entry point
+ * print tree digits
+ * Return: always 0 (success)
  */
-
 int main(void)
 {
+	int n;
+	int m;
+	int x;
 
-	int d1, d2, d3;
-
-	for (d1 = 48; d1 <= 57; d1++)
+	for (n = 48; n <= 55; n++)
 	{
-		for (d2 = 49; d2 <= 57; d2++)
+		for (m = n + 1; m <= 56; m++)
 		{
-			for (d3 = 50; d3 <= 57; d3++)
+			for (x = m + 1; x <= 57; x++)
 			{
-				if (d1 != d2 && d3 != d2 && d1 != d3)
+				putchar(n);
+				putchar(m);
+				putchar(x);
+
+				if (n != 55 || m != 56 || x != 57)
 				{
-					putchar(d1);
-					putchar(d2);
-					putchar(d3);
-
-					if (d1 + d2 + d3 != 24)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-
+					putchar(',');
+					putchar(' ');
 				}
-
 			}
-
-
 		}
-
 	}
 	putchar('\n');
-
 	return (0);
 }
