@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * cap_string - Capitalizes all words of a string.
  * @str: The input string.
@@ -7,7 +9,6 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-
 	/* Capitalize the first character if needed */
 	if (str[i] >= 'a' && str[i] <= 'z')
 		str[i] -= 32; /* Convert to uppercase in ASCII */
