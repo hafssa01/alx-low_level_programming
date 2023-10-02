@@ -1,0 +1,1 @@
+statatic_libraries
