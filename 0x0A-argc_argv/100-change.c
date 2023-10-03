@@ -3,9 +3,9 @@
 
 /**
  * main - prints the minimum number of coins to
- * make change for an amount of money
- * @argc: number of arguments
- * @argv: array of arguments
+ * make change for an amount of money.
+ * @argc: number of arguments.
+ * @argv: array of arguments.
  *
  * Return: 0 (True), 1 (Error)
  */
